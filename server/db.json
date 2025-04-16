@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Иван Петров",
+      "email": "user@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Анна Смирнова",
+      "email": "anna@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 3,
+      "name": "Сергей Иванов",
+      "email": "sergey@example.com",
+      "password": "password123"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Встреча команды разработчиков",
+      "description": "Обсуждение планов на следующий спринт",
+      "dateTime": "2025-04-20T14:00:00",
+      "location": "Конференц-зал №3",
+      "organizerId": 1,
+      "participants": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Мастер-класс по React",
+      "description": "Изучение продвинутых концепций React и Redux",
+      "dateTime": "2025-04-25T11:00:00",
+      "location": "Учебный центр",
+      "organizerId": 2,
+      "participants": [
+        1,
+        2,
+        "1744763821771"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Корпоративная вечеринка",
+      "description": "Празднование успешного запуска проекта",
+      "dateTime": "2025-05-01T18:00:00",
+      "location": "Ресторан 'Панорама'",
+      "organizerId": 3,
+      "participants": [
+        1,
+        2,
+        3,
+        "1744763821771"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Стратегическая сессия",
+      "description": "Планирование целей на следующий квартал",
+      "dateTime": "2025-05-10T10:00:00",
+      "location": "Конференц-зал №1",
+      "organizerId": 1,
+      "participants": [
+        1,
+        3
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "id": 1,
+      "userId": 1,
+      "eventId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "eventId": 1
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "eventId": 1
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "eventId": 2
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "eventId": 2
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "eventId": 3
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "eventId": 3
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "eventId": 3
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "eventId": 4
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "eventId": 4
+    }
+  ]
+}
