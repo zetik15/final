@@ -30,11 +30,13 @@ function LoginPage() {
         }
 
         dispatch(signin(credentials))
-            .then((resultAction) => {
-                if (signin.fulfilled.match(resultAction)) {
-                    navigate(redirect)
-                }
+            .unwrap()
+            .then(() => {
+                navigate(redirect);
             })
+            .catch((error) => {
+                console.error('Ошибка входа:', error);
+            });
     }
 
     const handleChange = (e) => {
