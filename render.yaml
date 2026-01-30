@@ -15,6 +15,3 @@ services:
     name: event-organizer-client
     buildCommand: cd client/client && npm install && npm run build
     staticPublishPath: client/client/build
-    envVars:
-      - key: REACT_APP_API_URL
-        value: https://event-organizer-server.onrender.com
