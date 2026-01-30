@@ -30,7 +30,6 @@ function EditEventPage() {
     const handleSave = (e) => {
         if (e) e.preventDefault();
         
-        // Проверка полей формы
         if (!formData.title) {
             setError('Название обязательно для заполнения');
             return;
