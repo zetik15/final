@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: event-organizer-server
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+
+  - type: static
+    name: event-organizer-client
+    buildCommand: cd client/client && npm install && npm run build
+    staticPublishPath: client/client/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://event-organizer-server.onrender.com
