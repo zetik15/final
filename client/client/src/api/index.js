@@ -2,7 +2,7 @@ import axios from 'axios';
 import { get, remove } from '../utils/localStorage';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://event-organizer-2ygk.onrender.com',
   headers: {
     'Content-Type': 'application/json'
   }
